@@ -1,0 +1,266 @@
+body,
+html {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 40px;
+  align-items: center;
+}
+
+.img-box {
+  margin-bottom: -4px;
+  margin: 20px;
+}
+
+.shrink-image {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 50px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.join {
+  width: 90%;
+  margin-left: 45px;
+  margin-right: -45px;
+}
+
+.icon-box {
+  display: flex;
+  width: 80%;
+  margin-left: 45px;
+  margin-bottom: -15px;
+}
+
+.check-img {
+  margin-right: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-box {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  align-self: flex-start;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.valid {
+  font-weight: 700;
+  margin-bottom: -30px;
+}
+
+input {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding: 20px 0px;
+  padding-left: 25px;
+  width: 80%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+input:hover,
+input:active {
+  cursor: pointer;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding: 20px 0px;
+  padding-left: 25px;
+  width: 80%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+#submit {
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  padding: 20px 0px;
+  width: 80%;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#submit:hover,
+#submit:active,
+.btn:hover,
+.btn:active {
+  background: linear-gradient(
+    234deg,
+    rgba(255, 178, 87, 1) 0%,
+    rgba(255, 98, 87, 1) 50%
+  );
+  -webkit-box-shadow: 0px 25px 50px -5px rgba(255, 98, 87, 1);
+  -moz-box-shadow: 0px 25px 50px -5px rgba(255, 98, 87, 1);
+  box-shadow: 0px 25px 50px -5px rgba(255, 98, 87, 1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  .sign-up {
+    flex-direction: column;
+  }
+  body,
+  html {
+    background-color: hsl(0, 0%, 100%);
+    align-items: flex-start;
+  }
+  .img-box {
+    margin: 0px;
+  }
+  .text-box {
+    width: 80%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .label-box,
+  input,
+  input:focus,
+  #submit {
+    width: 100%;
+  }
+  label {
+    margin-top: 20px;
+  }
+  .valid {
+    margin-bottom: -15px;
+  }
+  .join {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .icon-box {
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 0%);
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/*Thank-card*/
+.thank-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 40px;
+  background-color: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+  max-width: 550px;
+  padding: 50px 90px;
+}
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  padding: 20px 0px;
+  width: 100%;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 60px;
+  color: hsl(234, 29%, 20%);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.msg {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 375px) {
+  .thank-card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .btn {
+    margin-top: 200px;
+  }
+}
+
+.invalid-input,
+.invalid-input:hover {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 67%, 0.2);
+  color: hsl(4, 100%, 67%);
+}
+input:focus {
+  outline: none; /* Verwijder de standaard focus outline dit is de zwarte rand zodra focus!*/
+}
+
+/*.hide*/
+.hide {
+  display: none;
+}
